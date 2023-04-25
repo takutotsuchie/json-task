@@ -10,8 +10,7 @@ import (
 	"github.com/takutotsuchie/json-task/types"
 )
 
-// var file = os.Getenv("taskfile")
-var file = "./task.json"
+var file = os.Getenv("taskfile")
 
 func ReadFile() []types.Task {
 	//ファイルを開く
