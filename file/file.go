@@ -2,7 +2,6 @@ package file
 
 import (
 	"encoding/json"
-	"fmt"
 	"io"
 	"log"
 	"os"
@@ -43,7 +42,6 @@ func WriteFile(list []types.Task) {
 	if err != nil {
 		log.Print(err)
 	}
-	fmt.Println(string(data))
 	//書き込む。
 	_, err = f.Write(data)
 	if err != nil {
